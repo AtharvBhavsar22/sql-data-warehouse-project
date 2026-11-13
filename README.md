@@ -237,3 +237,11 @@ After creating the database objects and procedures, execute the Bronze and Silve
 | [Data Catalog](docs/data_catalog.md) | Gold-layer table and column definitions |
 | [Naming Conventions](docs/naming_conventions.md) | Naming standards for warehouse objects |
 
+## Acknowledgements
+
+- Inspired by the SQL Data Warehouse project by [Data With Baraa](https://www.youtube.com/@DataWithBaraa).
+- Thanks to Baraa Khatib Salkini for the learning resources and guidance.
+
+## License
+
+This project is licensed under the [MIT License](./LICENSE).
