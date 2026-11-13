@@ -1,11 +1,11 @@
-<div align="center">
+**<div align="center">
 
 # SQL Server Data Warehouse
 
 **An end-to-end data warehousing project built with SQL Server and Medallion Architecture**
 
 <p>
-  <img src="docs/readme-assets/architecture.svg" alt="SQL Server data warehouse architecture" width="100%">
+  <img src="D:\Projects\sql-data-warehouse-project\docs\data_architecture.png" width="100%">
 </p>
 
 [Architecture](#architecture) · [Data Flow](#data-flow) · [Data Model](#gold-layer-data-model) · [Project Structure](#project-structure) · [Getting Started](#getting-started)
@@ -249,7 +249,7 @@ After creating the database objects and procedures, execute the Bronze and Silve
 - CSV-based source-data ingestion.
 - Full-load ETL processing.
 - Bronze, Silver, and Gold layer separation.
-- Data cleansing and standardization.
+- Data **cleansing** and standardization.
 - Integration of CRM and ERP datasets.
 - Fact and dimension table design.
 - Star-schema dimensional modelling.
@@ -265,3 +265,4 @@ The course materials and original creator-branded reference diagrams are acknowl
 ## License
 
 See the [`LICENSE`](LICENSE) file for the license terms that accompany this repository. Retain the original copyright and attribution notices when redistributing material covered by that license.
+**
