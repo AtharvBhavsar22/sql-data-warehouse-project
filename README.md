@@ -1,34 +1,31 @@
-**<div align="center">
+<div align="center">
 
 # SQL Server Data Warehouse
 
 **An end-to-end data warehousing project built with SQL Server and Medallion Architecture**
 
-<p>
-  <img src="D:\Projects\sql-data-warehouse-project\docs\data_architecture.png" width="100%">
-</p>
 
-[Architecture](#architecture) · [Data Flow](#data-flow) · [Data Model](#gold-layer-data-model) · [Project Structure](#project-structure) · [Getting Started](#getting-started)
+![Data Architecture](./docs/data_architecture.png)
+
 
 </div>
 
 ---
 
-## Overview
+Developed a SQL Server Data Warehouse to integrate sales data from CRM and ERP systems.
 
-This project implements a SQL Server data warehouse that consolidates sales-related data from two source systems: **CRM** and **ERP**. The data is processed through three layers—**Bronze, Silver, and Gold**—to move from raw source data to cleaned, integrated, business-oriented data for analytical use.
+Implemented Bronze, Silver, and Gold layers for data ingestion, cleansing, transformation, and integration.
 
-The project covers source-data ingestion, data cleansing and standardization, data integration, dimensional modelling, documentation, and data-quality checks.
+Designed a Gold-layer Star Schema and added data-quality checks and project documentation.
 
 ## Project Goals
 
-- Build a structured data warehouse in Microsoft SQL Server.
-- Ingest source data supplied as CSV files from CRM and ERP.
-- Separate raw ingestion, transformation, and analytical presentation into distinct layers.
-- Clean, standardize, and integrate data from multiple source systems.
-- Create a Gold-layer sales data mart using a star schema.
-- Document the architecture, data flow, data model, naming conventions, and Gold-layer data definitions.
-- Add SQL-based data-quality checks for the Silver and Gold layers.
+- Build a SQL Server data warehouse to integrate CRM and ERP data.
+- Implement Bronze, Silver, and Gold layers for data ingestion, cleansing, and transformation.
+- Develop a Gold-layer sales data mart using a Star Schema.
+- Ensure data accuracy through SQL-based quality checks.
+- Document the architecture, ETL workflow, data model, and data definitions.
+
 
 ## Technology Stack
 
@@ -46,9 +43,8 @@ The project covers source-data ingestion, data cleansing and standardization, da
 
 The warehouse follows a three-layer Medallion Architecture.
 
-<p align="center">
-  <img src="docs/readme-assets/architecture.svg" alt="Bronze, Silver and Gold architecture" width="100%">
-</p>
+![Data Architecture](./docs/data_architecture.png)
+
 
 ### 1. Bronze Layer — Raw Data
 
@@ -96,9 +92,7 @@ The source-system relationship and integration documentation is available in [`d
 
 The datasets move from their source files into corresponding Bronze tables, then into Silver tables for cleaning and standardization. The prepared data is integrated into the Gold data mart.
 
-<p align="center">
-  <img src="docs/readme-assets/data-flow.svg" alt="Simplified warehouse data flow" width="100%">
-</p>
+![Data Flow](./docs/data_flow.png)
 
 The diagram shows the source-to-target lineage for the CRM and ERP entities and their movement across the three warehouse layers.
 
@@ -243,26 +237,3 @@ After creating the database objects and procedures, execute the Bronze and Silve
 | [Data Catalog](docs/data_catalog.md) | Gold-layer table and column definitions |
 | [Naming Conventions](docs/naming_conventions.md) | Naming standards for warehouse objects |
 
-## Key Concepts Demonstrated
-
-- SQL Server database and schema organization.
-- CSV-based source-data ingestion.
-- Full-load ETL processing.
-- Bronze, Silver, and Gold layer separation.
-- Data **cleansing** and standardization.
-- Integration of CRM and ERP datasets.
-- Fact and dimension table design.
-- Star-schema dimensional modelling.
-- SQL-based data-quality validation.
-- Technical documentation and Git version control.
-
-## Acknowledgements
-
-This project was developed as a learning and portfolio project using concepts studied through the **Data With Baraa SQL Data Warehouse course** by Baraa Khatib Salkini.
-
-The course materials and original creator-branded reference diagrams are acknowledged as learning references. Project-specific SQL implementation, organization, and documentation should be attributed according to their actual authorship.
-
-## License
-
-See the [`LICENSE`](LICENSE) file for the license terms that accompany this repository. Retain the original copyright and attribution notices when redistributing material covered by that license.
-**
